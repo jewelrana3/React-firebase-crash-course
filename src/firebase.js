@@ -14,12 +14,12 @@ import {
 // Create a .env file to keep your app configurations
 // Find an .env.examples file for reference under the project folder.
 const firebaseConfig = {
-  apiKey: "AIzaSyAOVR_I-OD2QKvyk6oOUj3gif0EKCyXum4",
-  authDomain: "gestbook-acaa9.firebaseapp.com",
-  projectId: "gestbook-acaa9",
-  storageBucket: "gestbook-acaa9.appspot.com",
-  messagingSenderId: "686351244535",
-  appId: "1:686351244535:web:e32114ee6fe4a94d8bc7f2",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_MESSAGING_APP_ID,
 };
 
 // Initialize Firebase
